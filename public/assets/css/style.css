@@ -1,0 +1,800 @@
+@charset 'UTF-8';
+@import url(//cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp_s.min.css);
+@import url(//cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp_s.min.css);
+.u-hover,
+.u-hover--card
+{
+    position: relative;
+}
+
+.u-hover--card
+{
+    overflow: hidden;
+}
+
+.u-hover--card::after
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    width: 150%;
+    height: 150%;
+
+    content: '';
+    -webkit-transition: all .5s cubic-bezier(.215, .61, .355, 1) 0s;
+    transition: all .5s cubic-bezier(.215, .61, .355, 1) 0s;
+    -webkit-transform: translate(130%, 55%) rotate(20deg);
+            transform: translate(130%, 55%) rotate(20deg);
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+    opacity: 0;
+    background: -webkit-gradient(linear, right top, left top, from(#b90912), color-stop(60%, #180000), to(#000));
+    background: linear-gradient(-90deg, #b90912, #180000 60%, #000);
+}
+
+.u-line-m
+{
+    max-width: 750px;
+    margin: 20px auto;
+}
+
+.u-line-m
+{
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.u-line-l
+{
+    width: 100%;
+    margin: 70px auto;
+}
+
+.u-font-en
+{
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.u-ta-center
+{
+    text-align: center;
+}
+
+.u-ta-left
+{
+    text-align: left;
+}
+
+.u-ta-right
+{
+    text-align: right;
+}
+
+.u-fw-lighter
+{
+    font-weight: lighter;
+}
+
+.u-fw-normal
+{
+    font-weight: normal;
+}
+
+.u-fw-bold
+{
+    font-weight: bold;
+}
+
+.u-fs-5
+{
+    font-size: 50%;
+}
+
+.u-fs-6
+{
+    font-size: 60%;
+}
+
+.u-fs-7
+{
+    font-size: 70%;
+}
+
+.u-fs-8
+{
+    font-size: 80%;
+}
+
+.u-fs-9
+{
+    font-size: 90%;
+}
+
+.u-fs-10
+{
+    font-size: 100%;
+}
+
+.u-fs-11
+{
+    font-size: 110%;
+}
+
+.u-fs-12
+{
+    font-size: 120%;
+}
+
+.u-fs-13
+{
+    font-size: 130%;
+}
+
+.u-fs-14
+{
+    font-size: 140%;
+}
+
+.u-fs-15
+{
+    font-size: 150%;
+}
+
+.u-fs-16
+{
+    font-size: 160%;
+}
+
+.u-fs-17
+{
+    font-size: 170%;
+}
+
+.u-fs-18
+{
+    font-size: 180%;
+}
+
+.u-fs-19
+{
+    font-size: 190%;
+}
+
+.u-fs-20
+{
+    font-size: 200%;
+}
+
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video
+{
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    border: 0;
+    outline: 0;
+    background: transparent;
+}
+
+body
+{
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section
+{
+    display: block;
+}
+
+nav ul
+{
+    list-style: none;
+}
+
+blockquote,
+q
+{
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after
+{
+    content: '';
+    content: none;
+}
+
+a
+{
+    font-size: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    vertical-align: baseline;
+
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins
+{
+    text-decoration: none;
+
+    color: #000;
+    background-color: #ff9;
+}
+
+/* change colours to suit your needs */
+mark
+{
+    font-weight: bold;
+    font-style: italic;
+
+    color: #000;
+    background-color: #ff9;
+}
+
+del
+{
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title]
+{
+    cursor: help;
+
+    border-bottom: 1px dotted;
+}
+
+table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* change border colour to suit your needs */
+hr
+{
+    display: block;
+
+    height: 1px;
+    margin: 1em 0;
+    padding: 0;
+
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+input,
+select
+{
+    vertical-align: middle;
+}
+
+/*!
+  Reset Stylesheet
+  Author: yama-dev - https://github.com/yama-dev
+  */
+body
+{
+    font-family: YakuHanJPs, 'メイリオ', Meiryo, '游ゴシック', YuGothic, 'Helvetica', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Arial, sans-serif;
+
+    word-wrap: break-word;
+
+    -webkit-text-size-adjust: 100%;
+
+       -moz-text-size-adjust: 100%;
+
+        -ms-text-size-adjust: 100%;
+
+            text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '.';
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea
+{
+    min-height: 1.5em;
+
+    background-color: transparent;
+}
+
+input[type='submit'],
+input[type='reset']
+{
+    cursor: pointer;
+}
+
+input:-webkit-autofill
+{
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}
+
+a[href^='tel']
+{
+    display: inline-block;
+
+    color: inherit;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
+
+html
+{
+    width: 100%;
+}
+
+body
+{
+    width: 100%;
+}
+
+img
+{
+    display: block;
+
+    max-width: 100%;
+
+    vertical-align: middle;
+}
+
+a
+{
+    text-decoration: none;
+
+    color: #000;
+}
+
+/*!
+  Reset Stylesheet
+  Author: yama-dev - https://github.com/yama-dev
+  */
+body
+{
+    font-family: YakuHanJPs, 'メイリオ', Meiryo, '游ゴシック', YuGothic, 'Helvetica', 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', 'Helvetica Neue', Arial, sans-serif;
+
+    word-wrap: break-word;
+
+    -webkit-text-size-adjust: 100%;
+
+       -moz-text-size-adjust: 100%;
+
+        -ms-text-size-adjust: 100%;
+
+            text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clearfix:after
+{
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: '.';
+}
+
+*
+{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea
+{
+    min-height: 1.5em;
+
+    background-color: transparent;
+}
+
+input[type='submit'],
+input[type='reset']
+{
+    cursor: pointer;
+}
+
+input:-webkit-autofill
+{
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+}
+
+a[href^='tel']
+{
+    display: inline-block;
+
+    color: inherit;
+}
+
+ol,
+ul
+{
+    list-style: none;
+}
+
+.l-wrap
+{
+    width: 100vw;
+    height: 100vh;
+}
+
+.p-visualizer__list
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    width: 100%;
+    min-height: 80vh;
+
+    -ms-flex-pack: distribute;
+
+        justify-content: space-around;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+}
+
+.p-visualizer__list li
+{
+    width: 1%;
+    height: 1px;
+    margin-right: 2px;
+
+    background: #000;
+}
+
+a
+{
+    text-decoration: underline;
+}
+
+.u-btn
+{
+    position: relative;
+
+    display: block;
+}
+
+.u-btn__on
+{
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    -webkit-transition: all 0s linear .05s;
+
+    transition: all 0s linear .05s;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+
+    opacity: 0;
+
+    -o-object-fit: contain;
+
+       object-fit: contain;
+}
+
+.u-scroll_bar
+{
+    position: relative;
+}
+
+.u-scroll_bar::before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    content: '';
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+
+    background: url('../img/btn_up.jpg') no-repeat center;
+    background-size: contain;
+}
+
+.u-scroll_bar::after
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+
+    width: 18px;
+    height: 18px;
+
+    content: '';
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+
+    background: url('../img/btn_under.jpg') no-repeat center;
+    background-size: contain;
+}
+
+.u-scroll_bar .ss-wrapper
+{
+    position: relative;
+    z-index: 1;
+
+    float: left;
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+
+.u-scroll_bar .ss-wrapper::before
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: block;
+
+    width: 17px;
+    height: 100%;
+
+    content: '';
+
+    background: #28294f;
+}
+
+.u-scroll_bar .ss-content
+{
+    position: relative;
+    right: -20px;
+
+    overflow: auto;
+
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 60px 0 0;
+}
+
+.u-scroll_bar .ss-scroll
+{
+    position: relative;
+    z-index: 1;
+    top: 0;
+
+    width: 15px;
+
+    cursor: pointer;
+    -webkit-transition: opacity .65s cubic-bezier(.165, .84, .44, 1);
+    transition: opacity .65s cubic-bezier(.165, .84, .44, 1);
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+
+    opacity: 1;
+    background: #6566a7;
+}
+
+@media screen and (min-width: 769px)
+{
+    .u-hover--card:hover::after
+    {
+        -webkit-transition: all .5s cubic-bezier(.215, .61, .355, 1) 0s;
+        transition: all .5s cubic-bezier(.215, .61, .355, 1) 0s;
+        -webkit-transform: translate(20%, 20%) rotate(20deg);
+                transform: translate(20%, 20%) rotate(20deg);
+
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+
+        opacity: .3;
+    }
+    .is-pc
+    {
+        display: block;
+    }
+    .is-sp
+    {
+        display: none !important;
+    }
+    .is-pc-inline
+    {
+        display: inline-block;
+    }
+    .is-sp-inline
+    {
+        display: none !important;
+    }
+    .u-btn:hover .u-btn__on
+    {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    .u-line-m
+    {
+        max-width: 80%;
+    }
+    .u-line-m
+    {
+        max-width: 90%;
+    }
+    .is-sp
+    {
+        display: block;
+    }
+    .is-pc
+    {
+        display: none !important;
+    }
+    .is-sp-inline
+    {
+        display: inline-block;
+    }
+    .is-p-inline
+    {
+        display: none !important;
+    }
+    .u-scroll_bar::before
+    {
+        content: none;
+    }
+    .u-scroll_bar::after
+    {
+        content: none;
+    }
+    .u-scroll_bar .ss-wrapper::before
+    {
+        right: -1px;
+
+        width: 9px;
+    }
+    .u-scroll_bar .ss-content
+    {
+        right: 0;
+
+        padding-right: 16px;
+    }
+    .u-scroll_bar .ss-scroll
+    {
+        width: 7px;
+
+        -webkit-transform: translateX(-2px);
+
+                transform: translateX(-2px);
+    }
+}

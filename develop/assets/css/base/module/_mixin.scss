@@ -1,0 +1,23 @@
+// sp用 px > % コンバーター
+@mixin wid($w,$wrap:750){
+  width: $w+px;
+  width: ( $w / $wrap ) * 100%;
+}
+
+@mixin font-oswald{
+  font-family: YakuHanJPs, "Oswald", "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+}
+
+@mixin font-encode_sans{
+  font-family: YakuHanJPs, "Encode Sans Condensed", "游ゴシック", YuGothic, "Helvetica", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "Helvetica Neue", Arial, sans-serif;
+}
+
+@mixin clearfix{
+  &::after{
+    content: '.';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}

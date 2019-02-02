@@ -1,0 +1,22 @@
+.l-wrap{
+  height: 100vh;
+  width: 100vw;
+}
+
+.p-visualizer__list{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  min-height: 80vh;
+  li{
+    width: 1%;
+    height: 1px;
+    background: #000;
+    margin-right: 2px;
+  }
+}
+
+a{
+  text-decoration: underline;
+}

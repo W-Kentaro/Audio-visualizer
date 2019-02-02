@@ -1,0 +1,151 @@
+
+// =========================
+// utility
+// =========================
+
+.u-hover{
+  $this: #{&};
+  position: relative;
+  &--btn{
+
+  }
+  &--card{
+    @extend #{$this};
+    overflow: hidden;
+    &::after{
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 150%;
+      height: 150%;
+      background: linear-gradient(-90deg, #b90912, #180000 60%, #000);
+      opacity: 0;
+      transform: translate(130%, 55%) rotate(20deg);
+      transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    }
+    @include pc{
+      &:hover{
+        &::after{
+          opacity: .3;
+          transform: translate(20%, 20%) rotate(20deg);
+          transition: all .5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+        }
+      }
+    }
+  }
+}
+
+
+.u-line{
+  &-m{
+    max-width: 750px;
+    margin: 20px auto;
+    @media screen and (max-width: 768px){
+      max-width: 80%;
+    }
+  }
+  &-m{
+    max-width: 1000px;
+    margin: 40px auto;
+    @media screen and (max-width: 768px){
+      max-width: 90%;
+    }
+  }
+  &-l{
+    width: 100%;
+    margin: 70px auto;
+  }
+}
+
+.u-font-en{
+  font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.u-ta-center{
+  text-align: center;
+}
+
+.u-ta-left{
+  text-align: left;
+}
+
+.u-ta-right{
+  text-align: right;
+}
+
+.u-fw-lighter{
+  font-weight: lighter;
+}
+
+.u-fw-normal{
+  font-weight: normal;
+}
+
+.u-fw-bold{
+  font-weight: bold;
+}
+
+.u-fs-5{
+  font-size: 50%;
+}
+
+.u-fs-6{
+  font-size: 60%;
+}
+
+.u-fs-7{
+  font-size: 70%;
+}
+
+.u-fs-8{
+  font-size: 80%;
+}
+
+.u-fs-9{
+  font-size: 90%;
+}
+
+.u-fs-10{
+  font-size: 100%;
+}
+
+.u-fs-11{
+  font-size: 110%;
+}
+
+.u-fs-12{
+  font-size: 120%;
+}
+
+.u-fs-13{
+  font-size: 130%;
+}
+
+.u-fs-14{
+  font-size: 140%;
+}
+
+.u-fs-15{
+  font-size: 150%;
+}
+
+.u-fs-16{
+  font-size: 160%;
+}
+
+.u-fs-17{
+  font-size: 170%;
+}
+
+.u-fs-18{
+  font-size: 180%;
+}
+
+.u-fs-19{
+  font-size: 190%;
+}
+
+.u-fs-20{
+  font-size: 200%;
+}

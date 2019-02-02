@@ -1,0 +1,52 @@
+@import "html5reset";
+@import "reset";
+
+html{
+  width: 100%;
+}
+
+body{
+  width: 100%;
+}
+
+@include pc{
+  .is-pc{
+    display: block;
+  }
+  .is-sp{
+    display: none !important;
+  }
+  .is-pc-inline{
+    display: inline-block;
+  }
+  .is-sp-inline{
+    display: none !important;
+  }
+}
+
+@include sp{
+  .is-sp{
+    display: block;
+  }
+  .is-pc{
+    display: none !important;
+  }
+  .is-sp-inline{
+    display: inline-block;
+  }
+  .is-p-inline{
+    display: none !important;
+  }
+}
+
+// Style Image Fit
+img{
+  max-width: 100%;
+  display: block;
+  vertical-align: middle;
+}
+
+a{
+  color: #000;
+  text-decoration: none;
+}
